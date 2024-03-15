@@ -12,10 +12,11 @@ try {
     $Latitude = $_POST["Latitude"];
     $Longitude = $_POST["Longitude"];
     $Altitude = $_POST["Altitude"];
+    $Trajet = $_POST["ID_Trajet"];
     $date = date("Y-m-d H:i:s");
 
-    $stmt = $conn->prepare("INSERT INTO Drones.POSITIONS (ID_drone, Latitude, Longitude, Altitude, Date) VALUES (:ID_drone, :Latitude, :Longitude, :Altitude, :Date)");
-    $stmt->execute(["ID_drone" => $ID_drone, "Latitude" => $Latitude, "Longitude" => $Longitude, "Altitude" => $Altitude, "Date" => $date]);
+    $stmt = $conn->prepare("INSERT INTO Drones.POSITIONS (ID_drone, Latitude, Longitude, Altitude, ID_Trajet, Date) VALUES (:ID_drone, :Latitude, :Longitude, :Altitude, :ID_Trajet, :Date)");
+    $stmt->execute(["ID_drone" => $ID_drone, "Latitude" => $Latitude, "Longitude" => $Longitude, "Altitude" => $Altitude, "ID_Trajet" => $Trajet, "Date" => $date]);
 
 } catch(PDOException $e) {
     echo "Erreur de connexion : " . $e->getMessage();
