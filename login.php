@@ -6,5 +6,5 @@ if($login == "Peter" && $pwd == "Parker"){
     $_SESSION['login'] = $login;
     echo "Bienvenue ".$login;
 }else{
-    echo "Échec GROSSE MERDE!";
+    echo "Utilisateur non reconnu.";
 }
