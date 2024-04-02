@@ -74,7 +74,7 @@ ini_set("display_errors",1);
 
     <?php
     }else{
-        echo "Accès refusé."
+        echo "Accès refusé.";
     }
     ?>
 
