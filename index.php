@@ -71,7 +71,12 @@ ini_set("display_errors",1);
             $conn = null;
         ?>
     </table>
-
+    <form action="login.html" method="post">
+        <?php
+        session_destroy();
+        ?>
+        <input type="submit" value="Déconnexion">
+    </form>
     <?php
     }else{
         echo "Accès refusé.";

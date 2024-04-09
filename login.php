@@ -9,5 +9,5 @@ if($login == "Peter" && $pwd == "Parker"){
     echo "Utilisateur non reconnu.";
 }
 ?>
-
+<br>
 <button onclick="window.location.href = 'index.php';">Retour à la page d'accueil</button>
