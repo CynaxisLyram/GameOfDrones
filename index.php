@@ -80,8 +80,14 @@ ini_set("display_errors",1);
     <?php
     }else{
         echo "Accès refusé.";
+        ?>
+        <form action="login.html" method="post">
+            <input type="submit" value="Connexion">
+        </form>
+        <?php
     }
     ?>
+
 
 </body>
 </html>
