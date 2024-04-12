@@ -74,12 +74,17 @@ ini_set("display_errors",1);
     <form action="login.html" method="post">
         <?php
         session_destroy();
+        if (isset($_COOKIE[session_name()])) {
+            setcookie( session_name(), '', time()-3600, '/' );
+        }
         ?>
         <input type="submit" value="Déconnexion">
     </form>
     <?php
     }else{
         echo "Accès refusé.";
+        $_SESSION = [];
+
         ?>
         <form action="login.html" method="post">
             <input type="submit" value="Connexion">
