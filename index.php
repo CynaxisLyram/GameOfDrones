@@ -29,7 +29,7 @@ ini_set("display_errors",1);
     <h1>Game of Drones</h1>
 
     <?php
-    if(isset($_SESSION['login']) && $_SESSION['login']=='Peter'){
+    if(isset($_SESSION['login'])){
     ?>
 
     <table>
