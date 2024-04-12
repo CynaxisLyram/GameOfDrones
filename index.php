@@ -90,7 +90,7 @@ ini_set("display_errors",1);
         <form action="login.html" method="post">
             <input type="submit" value="Connexion">
         </form>
-        <?php
+    <?php
     }
     ?>
 
