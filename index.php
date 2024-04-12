@@ -87,8 +87,13 @@ ini_set("display_errors",1);
         $_SESSION = [];
 
         ?>
+        <br>
         <form action="login.html" method="post">
             <input type="submit" value="Connexion">
+        </form>
+        <br>
+        <form action="inscription.php" method="post">
+            <input type="submit" value="Inscription">
         </form>
     <?php
     }
